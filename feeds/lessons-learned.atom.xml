@@ -1,6 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>putz.space - Lessons Learned</title><link href="https://web.putz.space/" rel="alternate"/><link href="https://web.putz.space/feeds/lessons-learned.atom.xml" rel="self"/><id>https://web.putz.space/</id><updated>2023-06-08T12:41:34-05:00</updated><subtitle>Web Designer, Developer and Freelancer</subtitle><entry><title>What I learned from putz.space</title><link href="https://web.putz.space/lessons-learned/lessons-learned/" rel="alternate"/><published>2023-06-08T12:41:34-05:00</published><updated>2023-06-08T12:41:34-05:00</updated><author><name>Pierce Putz</name></author><id>tag:web.putz.space,2023-06-08:/lessons-learned/lessons-learned/</id><summary type="html">&lt;p&gt;Reflecting on lessons learned from this portfolio project.&lt;/p&gt;</summary><content type="html">&lt;h2&gt;Lessons learned&lt;/h2&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>putz.space - Lessons Learned</title><link href="https://web.putz.space/" rel="alternate"/><link href="https://web.putz.space/feeds/lessons-learned.atom.xml" rel="self"/><id>https://web.putz.space/</id><updated>2023-06-08T15:27:07-05:00</updated><subtitle>Web Designer, Developer and Freelancer</subtitle><entry><title>What I learned from putz.space</title><link href="https://web.putz.space/lessons-learned/lessons-learned/" rel="alternate"/><published>2023-06-08T15:27:07-05:00</published><updated>2023-06-08T15:27:07-05:00</updated><author><name>Pierce Putz</name></author><id>tag:web.putz.space,2023-06-08:/lessons-learned/lessons-learned/</id><summary type="html">&lt;p&gt;Reflecting on lessons learned from this portfolio project.&lt;/p&gt;</summary><content type="html">&lt;h2&gt;Lessons learned&lt;/h2&gt;
 &lt;p&gt;Over the course of creating this web portfolio I've learned the following:&lt;/p&gt;
+&lt;h3&gt;Administration&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Figured out how to migrate github pages, branches and domain names.&lt;/li&gt;
+&lt;/ul&gt;
 &lt;h3&gt;Web Design&lt;/h3&gt;
 &lt;ul&gt;
 &lt;li&gt;Don't forget to make live content. Important for testing design.&lt;/li&gt;
