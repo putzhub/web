@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<title>putz.space - putz.space - music</title>
+<meta charset="utf-8"/>
+<meta content="Pelican" name="generator"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<link href="https://putz.space/web/images/favicon.ico" rel="shortcut icon"/>
+<link href="https://putz.space/web/feeds/all.atom.xml" rel="alternate" title="putz.space Full Atom Feed" type="application/atom+xml"/>
+<link href="https://putz.space/web/feeds/portfolio.atom.xml" rel="alternate" title="putz.space Categories Atom Feed" type="application/atom+xml"/>
+<!--- jquery -->
+<script crossorigin="anonymous" integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
+<!--- depends on webassets plugin (SASS hook) -->
+<link href="https://putz.space/web/theme/css/style.min.css?d9169ef4" rel="stylesheet"/>
+<script src="/theme/js/putz.js"></script>
+<link href="https://putz.space/web/portfolio/putz-space/" rel="canonical"/><script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "putz.space", "item": "https://putz.space/web"}, {"@type": "ListItem", "position": 2, "name": "Portfolio", "item": "https://putz.space/web/portfolio"}, {"@type": "ListItem", "position": 3, "name": "Putz space", "item": "https://putz.space/web/portfolio/putz-space"}, {"@type": "ListItem", "position": 4, "name": "Index", "item": "https://putz.space/web/portfolio/putz-space/index.html"}]}</script><script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "author": {"@type": "Person", "name": "Pierce Putz"}, "publisher": {"@type": "Organization", "name": "putz.space"}, "headline": "putz.space - music", "about": "Portfolio", "datePublished": "2019-03-03 00:00"}</script></head>
+<body class="home" id="index">
+<!-- header -->
+<header class="body" id="banner">
+<h1><a href="https://putz.space/web/">putz.space</a></h1>
+<button class="accordion">[ + ]</button>
+<nav class="panel" id="menu"><ul>
+<li><a href="https://putz.space/web/about/">About</a></li>
+<li><a href="https://putz.space/web/category/lessons-learned.html">Lessons Learned</a></li>
+<li><a href="https://putz.space/web/category/news.html">News</a></li>
+<li class="active"><a href="https://putz.space/web/category/portfolio.html">Portfolio</a></li>
+</ul>
+</nav><!-- /#menu -->
+</header><!-- /#banner -->
+<!-- content -->
+<main>
+<section class="body" id="content">
+<header>
+<h2 class="entry-title index-title">
+<a href="https://putz.space/web/portfolio/putz-space/" rel="bookmark" title="Permalink to putz.space - music">putz.space - music</a></h2>
+</header>
+<footer class="post-info">
+<div class="two-columns">
+<div>
+<time class="published" datetime="2019-03-03T00:00:00-06:00">
+<em>Published:</em> Sun 03 March 2019
+      </time><br/>
+<time class="modified" datetime="2023-06-06T18:59:49.583535-05:00">
+<em>Last Update:</em> Tue 06 June 2023
+      </time>
+<br/><br/>
+<div class="social-share">
+<ul>
+<li><strong>Share:</strong></li>
+<li><a href="mailto:?subject=Ludo%20Air%3A%20putz.space - music&amp;body=https://putz.space/web%2Fportfolio/putz-space/&amp;share=email&amp;nb=1" target="_blank">Email</a></li>
+<li><a href="https://www.facebook.com/sharer.php?u=https://putz.space/web%2Fportfolio/putz-space/" target="_blank">Facebook</a></li>
+<li><a href="https://twitter.com/intent/tweet?url=https://putz.space/web%2Fportfolio/putz-space/" target="_blank">Twitter</a></li>
+<li><a href="https://www.reddit.com/submit?url=https://putz.space/web/portfolio/putz-space/&amp;title=Ludo%20Air%3A" target="_blank">Reddit</a></li>
+</ul>
+</div>
+<!-- tags -->
+<!-- depends on pelican-related-posts -->
+</div>
+</div></footer><!-- /.post-info -->
+<div class="page-content entry-content">
+<figure>
+<a href="https://putz.space/music"><img alt="putz.space landing page" src="/images/portfolio/screenshots/putz-space-music.jpg"/></a>
+<figcaption>Click the photo above to visit! 🔗️</figcaption>
+</figure>
+<h2>putz.space - Music</h2>
+<p>I originally bought <strong>putz.space</strong> so I could personalize my email address, but I also decided to use it as a website. I started it as a personal blog, eventually added a <em>(now defunct)</em> Mastodon server and finally transitioned it into a music blog for my work as <em>Groove Masta Putz</em>.</p>
+<p>I'll eventually revisit it and spruce it up, but it's what I was doing with this space before I got into studying web design properly.</p>
+</div><!-- /.entry-content -->
+</section>
+</main>
+<!-- contact -->
+<script>
+    const params = new Proxy(new URLSearchParams(window.location.search), {
+        get: (searchParams, prop) => searchParams.get(prop),
+    });
+    
+    // Submit will refresh the page, so read the URL Search params on page load.
+    $( document ).ready( function (){
+        if (params.message != null){
+            send_message();
+        }
+    });
+    
+    function send_message(){
+        /* Compose email message */
+        emailMessage = '[putz.space/web - contact form]' +
+                '\nFrom: ' + params.name +
+                '\n-----' + 
+                '\n' + params.message;
+        console.log(emailMessage);
+        location.href='mailto:inquiry@putz.space?subject='+encodeURIComponent(params.subject)+'&body='+encodeURIComponent(emailMessage);
+        history.pushState(null, "", location.href.split("?")[0]);   //remove the query after it's been sent
+    }
+</script>
+<form id="send-message">
+<h2>Contact Me</h2>
+<p><em>Currently opens your default mail client.</em></p>
+<label for="name">Name</label>
+<input name="name" type="text"/>
+<br/>
+<label for="subject">Subject</label>
+<input name="subject" type="text"/>
+<br/>
+<label for="message">Message</label>
+<textarea name="message" type="text"></textarea>
+<br/>
+<input type="submit" value="Send Message"/>
+</form> <br/>
+<!-- footer -->
+<footer class="body" id="contentinfo">
+<ul id="footer-list">
+<li><strong><em><a href="https://putz.space/web">putz.space</a></em></strong></li>
+<li><nav id="sitemap">
+<a href="https://putz.space/web/about/">About</a>
+<a href="https://putz.space/web/category/lessons-learned.html">Lessons Learned</a>
+<a href="https://putz.space/web/category/news.html">News</a>
+<a href="https://putz.space/web/category/portfolio.html">Portfolio</a>
+</nav><!-- /#menu -->
+</li>
+</ul>
+</footer><!-- /#contentinfo -->
+</body>
+</html>

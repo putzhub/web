@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<title>putz.space - News tag</title>
+<meta charset="utf-8"/>
+<meta content="Pelican" name="generator"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<link href="https://putz.space/web/images/favicon.ico" rel="shortcut icon"/>
+<link href="https://putz.space/web/feeds/all.atom.xml" rel="alternate" title="putz.space Full Atom Feed" type="application/atom+xml"/>
+<!--- jquery -->
+<script crossorigin="anonymous" integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
+<!--- depends on webassets plugin (SASS hook) -->
+<link href="https://putz.space/web/theme/css/style.min.css?d9169ef4" rel="stylesheet"/>
+<script src="/theme/js/putz.js"></script>
+<meta content="putz.space - freelance web designer, portfolio and comissions" name="description"/>
+</head>
+<body class="home" id="index">
+<!-- header -->
+<header class="body" id="banner">
+<h1><a href="https://putz.space/web/">putz.space</a></h1>
+<button class="accordion">[ + ]</button>
+<nav class="panel" id="menu"><ul>
+<li><a href="https://putz.space/web/about/">About</a></li>
+<li><a href="https://putz.space/web/category/lessons-learned.html">Lessons Learned</a></li>
+<li><a href="https://putz.space/web/category/news.html">News</a></li>
+<li><a href="https://putz.space/web/category/portfolio.html">Portfolio</a></li>
+</ul>
+</nav><!-- /#menu -->
+</header><!-- /#banner -->
+<!-- content -->
+<main>
+<section id="content">
+<h2 class="index-title">Tag: News</h2>
+<ol id="post-list">
+<li><article class="hentry">
+<header> <h2 class="entry-title"><a href="https://putz.space/web/news/hello_world/" rel="bookmark" title="Permalink to Hello World">Hello World</a></h2> </header>
+<footer class="post-info">
+<time class="published" datetime="2023-06-04T00:00:00-05:00"> Sun 04 June 2023 </time>
+<address class="vcard author">By
+                                <a class="url fn" href="https://putz.space/web/author/pierce-putz.html">Pierce Putz</a>
+</address>
+<div class="tags">
+<a class="tag" href="https://putz.space/web/tag/news.html">News</a>
+</div>
+</footer><!-- /.post-info -->
+<div class="entry-content"> <p>This is my new web design &amp; development portfolio!</p> </div><!-- /.entry-content -->
+</article></li>
+</ol><!-- /#posts-list -->
+</section><!-- /#content -->
+</main>
+<!-- contact -->
+<script>
+    const params = new Proxy(new URLSearchParams(window.location.search), {
+        get: (searchParams, prop) => searchParams.get(prop),
+    });
+    
+    // Submit will refresh the page, so read the URL Search params on page load.
+    $( document ).ready( function (){
+        if (params.message != null){
+            send_message();
+        }
+    });
+    
+    function send_message(){
+        /* Compose email message */
+        emailMessage = '[putz.space/web - contact form]' +
+                '\nFrom: ' + params.name +
+                '\n-----' + 
+                '\n' + params.message;
+        console.log(emailMessage);
+        location.href='mailto:inquiry@putz.space?subject='+encodeURIComponent(params.subject)+'&body='+encodeURIComponent(emailMessage);
+        history.pushState(null, "", location.href.split("?")[0]);   //remove the query after it's been sent
+    }
+</script>
+<form id="send-message">
+<h2>Contact Me</h2>
+<p><em>Currently opens your default mail client.</em></p>
+<label for="name">Name</label>
+<input name="name" type="text"/>
+<br/>
+<label for="subject">Subject</label>
+<input name="subject" type="text"/>
+<br/>
+<label for="message">Message</label>
+<textarea name="message" type="text"></textarea>
+<br/>
+<input type="submit" value="Send Message"/>
+</form> <br/>
+<!-- footer -->
+<footer class="body" id="contentinfo">
+<ul id="footer-list">
+<li><strong><em><a href="https://putz.space/web">putz.space</a></em></strong></li>
+<li><nav id="sitemap">
+<a href="https://putz.space/web/about/">About</a>
+<a href="https://putz.space/web/category/lessons-learned.html">Lessons Learned</a>
+<a href="https://putz.space/web/category/news.html">News</a>
+<a href="https://putz.space/web/category/portfolio.html">Portfolio</a>
+</nav><!-- /#menu -->
+</li>
+</ul>
+</footer><!-- /#contentinfo -->
+</body>
+</html>
