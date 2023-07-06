@@ -5,7 +5,7 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
 <url>
 <loc>https://web.putz.space/</loc>
-<lastmod>2023-07-06T12:42:19-00:00</lastmod>
+<lastmod>2023-07-06T12:43:02-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
@@ -19,7 +19,7 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
 <url>
 <loc>https://web.putz.space/lessons-learned/the-web-industry-and-team/</loc>
-<lastmod>2023-07-06T12:40:06-05:00</lastmod>
+<lastmod>2023-07-06T12:42:59-05:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.5</priority>
 </url>
@@ -82,7 +82,7 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
 <url>
 <loc>https://web.putz.space/author/pierce-putz.html</loc>
-<lastmod>2023-07-06T12:40:06-05:51</lastmod>
+<lastmod>2023-07-06T12:42:59-05:51</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
